@@ -1,0 +1,71 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "Coronavirus (COVID-19) Infection Survey: England",
+    "description": "Official reported estimates of the percentage of the population testing positive for COVID-19, England.",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "dataset_issued": "2023-01-13T00:00Z",
+    "columns": {
+        "week": {
+            "from_template": "year",
+            "type": "dimension"
+        },
+        "ons_geog_code": {
+            "type": "dimension"
+        },
+        "percentage_pop_est": {
+            "type": "observations",
+            "unit": {
+                "label": "Percentage"
+            },
+            "measure": {
+                "label": "Modelled % testing positive for COVID-19"
+            }
+        },
+        "percentage_pop_est_lci": {
+            "type": "observations",
+            "unit": {
+                "label": "Percentage"
+            },
+            "measure": {
+                "label": "Modelled % testing positive for COVID-19. 95% credible interval: Lower"
+            }
+        },
+        "percentage_pop_est_uci": {
+            "type": "observations",
+            "unit": {
+                "label": "Percentage"
+            },
+            "measure": {
+                "label": "Modelled % testing positive for COVID-19. 95% credible interval: Upper"
+            }
+        },
+        "pop_est": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Modelled estimate of the number of people testing positive for COVID-19"
+            }
+        },
+        "pop_est_lci": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Modelled estimate of the number of people testing positive for COVID-19: 95% credible interval: Lower"
+            }
+        },
+        "pop_est_uci": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Modelled estimate of the number of people testing positive for COVID-19: 95% credible interval: Upper"
+            }
+        }
+    }
+}
